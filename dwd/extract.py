@@ -25,7 +25,7 @@ class extractor:
 
     def __download_file(self, filename):
         try:
-            self.__files[filename] = BytesIO(requests.get(self.__get_url(filename)).content)
+            self.__files[filename] = requests.get(self.__get_url(filename)).content
         except requests.exceptions.RequestException as e:
             logger.error (f'failed to download {filename}')
             raise SystemExit(e)
@@ -49,4 +49,4 @@ class dwd_extractor(extractor):
         self.__filenames = { month: self.BASE_FILENAME.format(str(month).zfill(2)) for month in range(1,13) }
 
     def get_file_for_month(self, month):
-        return self._get_file(self.__filenames[month])
+        return BytesIO(self._get_file(self.__filenames[month]))
