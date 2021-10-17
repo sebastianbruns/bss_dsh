@@ -11,8 +11,8 @@
     |-- transform.py   The "T" in ETL. Specific transformation logic returning pandas dataframe.
 ```
 ### Notebook:
-- View source code in [github](dwd.ipynb) or [notebook viewer](https://nbviewer.org/github/sebastianbruns/bss_dsh/blob/master/dwd.ipynb)
-- Run notebook interactively on [binder](https://mybinder.org/v2/gh/sebastianbruns/bss_dsh/5c9e09bd468407177fe0551d86bcd57feace6040)
+- View source code in [github](dwd.ipynb) or [notebook viewer](https://nbviewer.org/github/sebastianbruns/two_tasks/blob/master/dwd.ipynb)
+- Run interactively on [binder](https://mybinder.org/v2/gh/sebastianbruns/two_tasks/a3c46e4dd3dfbbace856fb0776db680c70080aa5?filepath=dwd.ipynb)
 ---
 ## Task 2: Function to calculate working hours
 
@@ -30,4 +30,5 @@
     python -m unittest discover workinghours/tests/
 
 ### Notebook:
-- View source code in [github](working_hours.ipynb) or [notebook viewer](https://nbviewer.org/github/sebastianbruns/bss_dsh/blob/master/working_hours.ipynb)
+- View source code in [github](working_hours.ipynb) or [notebook viewer](https://nbviewer.org/github/sebastianbruns/two_tasks/blob/master/working_hours.ipynb)
+- Run interactively on [binder](https://mybinder.org/v2/gh/sebastianbruns/two_tasks/a3c46e4dd3dfbbace856fb0776db680c70080aa5?filepath=working_hours.ipynb)
